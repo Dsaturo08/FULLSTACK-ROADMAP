@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap Fullstack JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    input[type="radio"] {
+      transform: scale(1.2);
+    }
+    .completed {
+      text-decoration: line-through;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Roadmap Fullstack JavaScript en 1 Mois</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Jour</th>
+        <th>Contenu</th>
+        <th>Projet</th>
+        <th>Terminé</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Semaine 1 -->
+      <tr>
+        <td colspan="4" style="background-color: #ecf0f1; text-align: center; font-weight: bold;">Semaine 1 : Les Fondamentaux (HTML, CSS, JavaScript)</td>
+      </tr>
+      <tr>
+        <td>Jour 1-2</td>
+        <td>HTML et CSS : Structure, Flexbox, Grid, Responsive Design</td>
+        <td>CV en ligne</td>
+        <td><input type="radio" name="day1-2" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 3-5</td>
+        <td>JavaScript de base : Variables, boucles, conditions, fonctions, DOM, événements</td>
+        <td>Jeu : Devine le nombre</td>
+        <td><input type="radio" name="day3-5" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 6-7</td>
+        <td>JavaScript avancé : ES6+, Promesses, async/await</td>
+        <td>To-Do List</td>
+        <td><input type="radio" name="day6-7" onchange="markCompleted(this)"></td>
+      </tr>
+
+      <!-- Semaine 2 -->
+      <tr>
+        <td colspan="4" style="background-color: #ecf0f1; text-align: center; font-weight: bold;">Semaine 2 : Front-End (React.js)</td>
+      </tr>
+      <tr>
+        <td>Jour 8-9</td>
+        <td>Introduction à React : Composants, JSX, props, state</td>
+        <td>Compteur interactif</td>
+        <td><input type="radio" name="day8-9" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 10-11</td>
+        <td>React avancé : Hooks (useState, useEffect), gestion des formulaires</td>
+        <td>Formulaire de contact avec validation</td>
+        <td><input type="radio" name="day10-11" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 12-13</td>
+        <td>React Router et API : Navigation, fetch/Axios</td>
+        <td>Application avec API publique (ex : films)</td>
+        <td><input type="radio" name="day12-13" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 14</td>
+        <td>Révision et projet</td>
+        <td>Clone d'une application simple (ex : Netflix)</td>
+        <td><input type="radio" name="day14" onchange="markCompleted(this)"></td>
+      </tr>
+
+      <!-- Semaine 3 -->
+      <tr>
+        <td colspan="4" style="background-color: #ecf0f1; text-align: center; font-weight: bold;">Semaine 3 : Back-End (Node.js, Express.js, Bases de Données)</td>
+      </tr>
+      <tr>
+        <td>Jour 15-16</td>
+        <td>Introduction à Node.js : Modules, système de fichiers, npm</td>
+        <td>Serveur "Hello World"</td>
+        <td><input type="radio" name="day15-16" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 17-18</td>
+        <td>Express.js : Création d'API RESTful, middleware, gestion des erreurs</td>
+        <td>API pour liste de tâches</td>
+        <td><input type="radio" name="day17-18" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 19-20</td>
+        <td>Bases de données : SQL (MySQL/PostgreSQL) ou NoSQL (MongoDB), ORM/ODM</td>
+        <td>Connecter l'API à une base de données</td>
+        <td><input type="radio" name="day19-20" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 21</td>
+        <td>Authentification et sécurité : JWT, bcrypt</td>
+        <td>Ajouter l'authentification à l'API</td>
+        <td><input type="radio" name="day21" onchange="markCompleted(this)"></td>
+      </tr>
+
+      <!-- Semaine 4 -->
+      <tr>
+        <td colspan="4" style="background-color: #ecf0f1; text-align: center; font-weight: bold;">Semaine 4 : Fullstack et Déploiement</td>
+      </tr>
+      <tr>
+        <td>Jour 22-23</td>
+        <td>Intégration Front-End et Back-End</td>
+        <td>Application Fullstack (ex : blog avec authentification)</td>
+        <td><input type="radio" name="day22-23" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 24-25</td>
+        <td>GraphQL (optionnel)</td>
+        <td>Remplacer l'API REST par GraphQL</td>
+        <td><input type="radio" name="day24-25" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 26-27</td>
+        <td>Déploiement : Vercel/Netlify (front-end), Heroku/Render (back-end)</td>
+        <td>Mettre en ligne l'application Fullstack</td>
+        <td><input type="radio" name="day26-27" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 28-30</td>
+        <td>Projet Final</td>
+        <td>Plateforme de chat en temps réel avec WebSockets</td>
+        <td><input type="radio" name="day28-30" onchange="markCompleted(this)"></td>
+      </tr>
+      <tr>
+        <td>Jour 31</td>
+        <td>Révision et portfolio</td>
+        <td>Créer un portfolio en ligne</td>
+        <td><input type="radio" name="day31" onchange="markCompleted(this)"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function markCompleted(radio) {
+      const row = radio.closest('tr');
+      if (radio.checked) {
+        row.classList.add('completed');
+      } else {
+        row.classList.remove('completed');
+      }
+    }
+  </script>
+</body>
+</html>
